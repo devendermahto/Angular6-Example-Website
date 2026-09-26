@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "license": "https://themeforest.net/licenses/terms/regular",
   "scripts": {
-    "build": "node canary.js && tsc",
-    "prepare": "node canary.js"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "private": true,
   "dependencies": {
